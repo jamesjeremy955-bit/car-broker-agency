@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrokerIDE - Nationwide Agency Shell</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { display: flex; flex-direction: column; height: 100vh; background: #18181b; color: #f4f4f5; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; user-select: none; }
+    #header { height: 46px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 80px; background: #27272a; border-bottom: 1px solid #3f3f46; -webkit-app-region: drag; }
+    #container { display: flex; flex: 1; overflow: hidden; }
+    #editor { flex: 1; height: 100%; background: #141416; display: flex; flex-direction: column; padding: 20px; overflow-y: auto; }
+    #workbench { width: 440px; background: #1f1f23; border-left: 1px solid #3f3f46; padding: 16px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; -webkit-app-region: no-drag; }
+    .status-badge { padding: 4px 10px; border-radius: 9999px; font-weight: 600; font-size: 11px; }
+    .status-good { background: #064e3b; color: #34d399; }
+    .card { background: #27272a; border: 1px solid #3f3f46; border-radius: 8px; padding: 14px; }
+    .card h3 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #a1a1aa; margin-bottom: 8px; }
+    button.primary-btn { background: #2563eb; border: none; color: white; padding: 10px 12px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 13px; width: 100%; transition: background 0.2s; }
+    button.primary-btn:hover { background: #1d4ed8; }
+    button.primary-btn:disabled { background: #4b5563; cursor: not-allowed; }
+    .field { margin-bottom: 10px; }
+    .field label { font-size: 11px; color: #a1a1aa; display: block; margin-bottom: 4px; font-weight: 500; }
+    .field input, .field textarea { width: 100%; background: #18181b; border: 1px solid #3f3f46; border-radius: 4px; padding: 7px 10px; color: white; font-size: 12px; }
+    .field textarea { resize: none; height: 50px; }
+    .terminal-box { background: #09090b; border: 1px solid #27272a; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 12px; color: #10b981; flex: 1; overflow-y: auto; white-space: pre-wrap; }
+    
+    /* SearchTempest Region Grid */
+    .region-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 6px; }
+    .region-btn { background: #2d2d30; border: 1px solid #3f3f46; color: #e4e4e7; padding: 7px 8px; border-radius: 5px; font-size: 11px; font-weight: 600; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+    .region-btn:hover { background: #3b82f6; border-color: #60a5fa; color: white; }
+    .region-btn span { font-size: 10px; color: #a1a1aa; }
+    .region-btn:hover span { color: #e0e7ff; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div style="font-size: 13px;"><strong>BrokerIDE</strong> &bull; Nationwide Sourcing Shell</div>
+    <div id="context-badge" class="status-badge status-good">Context Remaining: 100% (0 / 128k)</div>
+  </div>
+
+  <div id="container">
+    <div id="editor">
+      <div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 13px; font-weight: 600; color: #e4e4e7;">Execution & Automation Logs</span>
+        <span style="font-size: 11px; color: #71717a;">Profile: Session Persisted</span>
+      </div>
+      <div id="log-output" class="terminal-box">Ready. Select a nationwide region or target query below...</div>
+    </div>
+
+    <div id="workbench">
+      <!-- SearchTempest Nationwide Region Switcher -->
+      <div class="card">
+        <h3>SearchTempest Hub &bull; US Nationwide Regions</h3>
+        <div class="field">
+          <label>Search Keyword / Vehicle</label>
+          <input type="text" id="target-veh" value="manual" oninput="updateRegionUrls()">
+        </div>
+        <label style="font-size: 11px; color: #a1a1aa; font-weight: 500;">Quick-Select Geographic Region:</label>
+        <div class="region-grid">
+          <button class="region-btn" onclick="selectRegion('fl', 'Florida (Miami &bull; Orlando &bull; Tampa)')">🌴 Florida <span>South</span></button>
+          <button class="region-btn" onclick="selectRegion('tx', 'Texas (Houston &bull; Dallas &bull; Austin)')">🤠 Texas <span>Central</span></button>
+          <button class="region-btn" onclick="selectRegion('ca', 'California (LA &bull; Bay Area &bull; SD)')">☀️ California <span>West</span></button>
+          <button class="region-btn" onclick="selectRegion('ne', 'US Northeast (NY &bull; NJ &bull; PA)')">🏙️ Northeast <span>East</span></button>
+          <button class="region-btn" onclick="selectRegion('midwest', 'US Midwest (Chicago &bull; Detroit)')">🌽 Midwest <span>Central</span></button>
+          <button class="region-btn" onclick="selectRegion('se', 'US Southeast (Atlanta &bull; NC &bull; SC)')">🌲 Southeast <span>East</span></button>
+          egion-btn" onclick="selectRegion('nw', 'Pacific Northwest (Seattle &bull; Portland)')">🏔️ Northwest <span>West</span></button>
+          <button class="region-btn" onclick="selectRegion('all', 'All Nationwide (US Broad)')">🇺🇸 US Broad <span>Nation</span></button>
+        </div>
+      </div>
+
+      <!-- Outreach Stager -->
+      <div class="card">
+        <h3>Outreach Prompter</h3>
+        <div class="field">
+          <label>Active Listing URL</label>
+          <input type="text" id="target-url" value="https://www.facebook.com/marketplace/113135982031282/search/?query=manual">
+        </div>
+        <div class="field">
+          <label>Generated Seller Prompt (Stock)</label>
+          <textarea id="prompt-preview">What's your lowest?</textarea>
+        </div>
+        <button id="playwright-btn" class="primary-btn" onclick="triggerPlaywright()">Launch Target Listing & Stage Inquiry</button>
+      </div>
+
+      <div class="card">
+        <h3>Pipeline Quick Log</h3>
+        <ul style="list-style: no-size: 11px; color: #d4d4d8; line-height: 1.6;">
+          <li>🟢 <strong>Target:</strong> Facebook Nationwide Engine</li>
+          <li>🔵 <strong>Storage:</strong> Chromium Profile Persisted</li>
+          <li>🟡 <strong>Prompt:</strong> Direct "What's your lowest?"</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    const REGION_MAP = {
+      'fl': '113135982031282',      // Miami/South FL
+      'tx': '108119859218683',      // Houston, TX
+      'ca': '112028682142278',      // Los Angeles, CA
+      'ne': '110843418940257',      // New York, NY
+      'midwest': '103764646330441', // Chicago, IL
+      'se': '107872659244031',      // Atlanta, GA
+      'nw': '103130103061219',      // Seattle, WA
+      'all': '113135982031282'      // Default Broad
+    };
+
+    let activeRegion = 'fl';
+
+    function selectRegion(regionKey, label) {
+      activeRegion = regionKey;
+      updateRegionUrls();
+      log(`[*] Selected Nationwide Region: ${lab
+    }
+
+    function updateRegionUrls() {
+      const keyword = encodeURIComponent(document.getElementById('target-veh').value.trim() || 'manual');
+      const regionId = REGION_MAP[activeRegion] || REGION_MAP['fl'];
+      const url = `https://www.facebook.com/marketplace/${regionId}/search/?query=${keyword}`;
+      document.getElementById('target-url').value = url;
+    }
+
+    function log(msg) {
+      const box = document.getElementById('log-output');
+      box.innerText += "\n" + msg;
+      box.scrollTop = box.scrollHeight;
+    }
+
+    async function triggerPlaywright() {
+      const btn = document.getElementById('playwright-btn');
+      const payload = {
+        vehicle: document.getElementById('target-veh').value,
+        url: document.getElementById('target-url').value,
+        prompt: document.getElementById('prompt-preview').value
+      };
+
+      btn.disabled = true;
+      btn.innerText = "Browser Active...";
+      log(`[*] Launching session for: ${payload.vehicle}`);
+      log(`[*] Target URL: ${payload.url}`);
+      log(`[*] Stock Message: "${payload.prompt}"`);
+
+      try {
+        const res = await ipcRenderer.invoke('launch-playwright', payload);
+        log(`[✔] Finished with status: ${res.status}`);
+      } catch (err) {
+        log(`[✖] Error: ${err.message}`);
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "Launch Target Listing & Stage Inquiry";
+      }
+    }
+  </script>
+</body>
+</html>

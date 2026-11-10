@@ -1,0 +1,194 @@
+{
+  "client": {
+    "name": "",
+    "vehicle": ""
+  },
+  "profiles": [
+    "https://bringatrailer.com/member/jamesjeremy955",
+    "https://bringatrailer.com/member/Blinker_Nah",
+    "https://carsandbids.com/user/Blinker_Nah",
+    "https://carsandbids.com/user/jscher1"
+  ],
+  "cars": [
+    {
+      "id": "01-1985-porsche-911-carrera-m491",
+      "rank": 1,
+      "title": "1985 Porsche 911 Carrera Coupe",
+      "subtitle": "Factory M491 “Turbo-Look”",
+      "platform": "BaT",
+      "result": "Sold",
+      "price": 91000,
+      "date": "July 26, 2026",
+      "listing_url": "https://bringatrailer.com/listing/1985-porsche-1985-porsche-911-carrera-coupe-m491/",
+      "highlights": [
+        "Factory M491 package: wide rear bodywork, front and rear spoilers, revised suspension",
+        "3.2L flat-six with 915 five-speed manual transaxle and limited-slip differential",
+        "Garnet Red Metallic over Wine Red leather, 64k miles shown, clean Carfax"
+      ]
+    },
+    {
+      "id": "02-2013-porsche-911-carrera-s",
+      "rank": 2,
+      "title": "2013 Porsche 911 Carrera S Coupe",
+      "subtitle": "991.1 · Sport Chrono",
+      "platform": "BaT",
+      "result": "Sold",
+      "price": 51000,
+      "date": "April 25, 2024",
+      "listing_url": "https://bringatrailer.com/listing/2013-porsche-911-carrera-s-coupe-19/",
+      "highlights": [
+        "3.8L flat-six in Agate Gray Metallic over black leather, approx. 65k miles",
+        "Sport Chrono and Premium packages on 20″ Carrera Classic wheels",
+        "Replacement 7-speed PDK installed December 2023, service records included"
+      ]
+    },
+    {
+      "id": "03-2000-bmw-e39-m5",
+      "rank": 3,
+      "title": "2000 BMW M5 (E39)",
+      "subtitle": "S62 V8 · 6-Speed Manual",
+      "platform": "BaT",
+      "result": "High Bid",
+      "price": 22000,
+      "date": "September 13, 2025",
+      "listing_url": "https://bringatrailer.com/listing/2000-bmw-m5-351/",
+      "highlights": [
+        "4.9L S62 V8 with six-speed manual and limited-slip differential",
+        "Le Mans Blue Metallic over Silverstone and black leather",
+        "Reached a $22,000 high bid on Bring a Trailer (reserve not met); subsequently placed and sold to a private collector through our private client network for $24,000."
+      ],
+      "post_auction_note": "Sold post-auction via our private client network for $24,000."
+    },
+    {
+      "id": "04-2010-bmw-535i-xdrive-wagon",
+      "rank": 4,
+      "title": "2010 BMW 535i xDrive Sports Wagon",
+      "subtitle": "6-Speed Manual · N54",
+      "platform": "C&B",
+      "result": "Sold",
+      "price": 20150,
+      "date": "August 4, 2026",
+      "listing_url": "https://carsandbids.com/auctions/rJZYxYgv/2010-bmw-535i-xdrive-sports-wagon",
+      "highlights": [
+        "Twin-turbo inline-six with a six-speed manual and xDrive all-wheel drive",
+        "Manual-transmission wagon with a dedicated enthusiast following",
+        "Closed at $20,150 on Cars & Bids"
+      ]
+    },
+    {
+      "id": "05-2001-bmw-e46-m3-coupe",
+      "rank": 5,
+      "title": "2001 BMW M3 Coupe (E46)",
+      "subtitle": "6-Speed Manual",
+      "platform": "C&B",
+      "result": "Sold",
+      "price": 19250,
+      "date": "",
+      "listing_url": "https://carsandbids.com/auctions/3BZmWo85/2001-bmw-m3-coupe",
+      "highlights": [
+        "Six-speed manual E46 M3, the generation collectors chase",
+        "Closed at $19,250 on Cars & Bids"
+      ],
+      "image": "images/car_2001_bmw_m3_coupe.jpg"
+    },
+    {
+      "id": "06-2003-bmw-e46-m3-convertible",
+      "rank": 6,
+      "title": "2003 BMW M3 Convertible (E46)",
+      "subtitle": "6-Speed Manual",
+      "platform": "C&B",
+      "result": "Sold",
+      "price": 13800,
+      "date": "January 22, 2025",
+      "listing_url": "https://carsandbids.com/auctions/3qJeRm2y/2003-bmw-m3-convertible",
+      "highlights": [
+        "Six-speed manual, southern-owned, mostly unmodified",
+        "Miami, FL car sold to a national audience"
+      ]
+    },
+    {
+      "id": "07-2016-bmw-328d-xdrive-wagon",
+      "rank": 7,
+      "title": "2016 BMW 328d xDrive Sports Wagon",
+      "subtitle": "Turbodiesel · AWD",
+      "platform": "C&B",
+      "result": "Sold",
+      "price": 12402,
+      "date": "October 16, 2026",
+      "listing_url": "https://carsandbids.com/auctions/9eM6mboj/2016-bmw-328d-xdrive-sports-wagon",
+      "highlights": [
+        "Turbodiesel power with all-wheel drive",
+        "California-owned with recent service"
+      ]
+    },
+    {
+      "id": "08-2008-bmw-335i-sedan",
+      "rank": 8,
+      "title": "2008 BMW 335i Sedan",
+      "subtitle": "6-Speed Manual · No Reserve",
+      "platform": "BaT",
+      "result": "Sold",
+      "price": 9800,
+      "date": "April 4, 2024",
+      "listing_url": "https://bringatrailer.com/listing/2008-bmw-335i-sedan-8/",
+      "highlights": [
+        "Twin-turbo 3.0L inline-six, six-speed manual, 93k miles",
+        "California-registered from new, Crimson Red over black Dakota leather",
+        "Sport, Premium and Cold Weather packages"
+      ]
+    },
+    {
+      "id": "09-2006-bmw-330i-sedan",
+      "rank": 9,
+      "title": "2006 BMW 330i Sedan",
+      "subtitle": "6-Speed Manual",
+      "platform": "C&B",
+      "result": "Sold",
+      "price": 9500,
+      "date": "",
+      "listing_url": "https://carsandbids.com/auctions/98V24Ppv/2006-bmw-330i-sedan",
+      "highlights": [
+        "Six-speed manual E90-era 3 Series",
+        "Closed at $9,500 on Cars & Bids"
+      ],
+      "image": "images/car_2006_bmw_330i.jpg"
+    },
+    {
+      "id": "10-1994-dodge-viper-rt10",
+      "rank": 0,
+      "title": "1994 Dodge Viper RT/10",
+      "subtitle": "8.0L V10 · 6-Speed Manual",
+      "platform": "BaT",
+      "result": "Sold",
+      "price": 35251,
+      "date": "May 4, 2025",
+      "listing_url": "https://bringatrailer.com/listing/1994-dodge-viper-rt-10-82/",
+      "image": "images/car_1994_dodge_viper.jpg",
+      "highlights": [
+        "Viper Red over Quartz leather, 32k miles",
+        "400-hp 8.0-liter V10 with Tremec 6-speed manual",
+        "Registered in California since November 2003"
+      ]
+    }
+  ],
+  "bat_sources": {
+    "01-1985-porsche-911-carrera-m491": "https://bringatrailer.com/listing/1985-porsche-1985-porsche-911-carrera-coupe-m491/",
+    "02-2013-porsche-911-carrera-s": "https://bringatrailer.com/listing/2013-porsche-911-carrera-s-coupe-19/",
+    "03-2000-bmw-e39-m5": "https://bringatrailer.com/listing/2000-bmw-m5-351/",
+    "08-2008-bmw-335i-sedan": "https://bringatrailer.com/listing/2008-bmw-335i-sedan-8/"
+  },
+  "cb_sources": {
+    "04-2010-bmw-535i-xdrive-wagon": {
+      "profile": "https://carsandbids.com/user/Blinker_Nah",
+      "auction_id": "rJZYxYgv"
+    },
+    "06-2003-bmw-e46-m3-convertible": {
+      "profile": "https://carsandbids.com/user/jscher1",
+      "auction_id": "3qJeRm2y"
+    },
+    "07-2016-bmw-328d-xdrive-wagon": {
+      "profile": "https://carsandbids.com/user/Blinker_Nah",
+      "auction_id": "9eM6mboj"
+    }
+  }
+}

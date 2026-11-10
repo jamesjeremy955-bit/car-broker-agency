@@ -1,0 +1,45 @@
+{
+  "01-1985-porsche-911-carrera-m491": {
+    "status": "ok",
+    "file": "images/01-1985-porsche-911-carrera-m491.jpg",
+    "source": "https://bringatrailer.com/wp-content/uploads/2026/05/0Y6A6760-02850-1-copy-2026-07-02-f31-07246.jpg"
+  },
+  "02-2013-porsche-911-carrera-s": {
+    "status": "ok",
+    "file": "images/02-2013-porsche-911-carrera-s.jpg",
+    "source": "https://bringatrailer.com/wp-content/uploads/2024/04/2013_porsche_911-carrera-s-coupe_4-_dsc1181-04990.jpg"
+  },
+  "03-2000-bmw-e39-m5": {
+    "status": "ok",
+    "file": "images/03-2000-bmw-e39-m5.jpg",
+    "source": "https://bringatrailer.com/wp-content/uploads/2025/08/2000_bmw_m5_0y6a6388-5-98751.jpg"
+  },
+  "08-2008-bmw-335i-sedan": {
+    "status": "ok",
+    "file": "images/08-2008-bmw-335i-sedan.jpg",
+    "source": "https://bringatrailer.com/wp-content/uploads/2024/03/2008_bmw_335i-sedan_img_6336-88978.jpg"
+  },
+  "04-2010-bmw-535i-xdrive-wagon": {
+    "status": "ok",
+    "file": "images/04-2010-bmw-535i-xdrive-wagon.jpg",
+    "source": "https://media.carsandbids.com/cdn-cgi/image/width=1600,quality=85/4615f7df60f9e7da8f33568c1727091ab1eb1c0d/photos/3LGz100R--ZYtBdwk4y.jpeg"
+  },
+  "07-2016-bmw-328d-xdrive-wagon": {
+    "status": "ok",
+    "file": "images/07-2016-bmw-328d-xdrive-wagon.jpg",
+    "source": "https://media.carsandbids.com/cdn-cgi/image/width=1600,quality=85/c7387fa5557775cb743f87fc02d6cb831afb20b2/photos/application/s-9zM1h9p/edit/pVnI6.jpg"
+  },
+  "06-2003-bmw-e46-m3-convertible": {
+    "status": "ok",
+    "file": "images/06-2003-bmw-e46-m3-convertible.jpg",
+    "source": "https://media.carsandbids.com/cdn-cgi/image/width=1600,quality=85/9004500a220bf3a3d455d15ee052cf8c332606f8/photos/interior/3g7Z1LxE-xe2Vj7Wdpo/edit/8ksRp.jpg"
+  },
+  "05-2001-bmw-e46-m3-coupe": {
+    "status": "missing",
+    "error": "no public listing URL resolved; add one to cars.json"
+  },
+  "09-2006-bmw-330i-sedan": {
+    "status": "missing",
+    "error": "no public listing URL resolved; add one to cars.json"
+  }
+}

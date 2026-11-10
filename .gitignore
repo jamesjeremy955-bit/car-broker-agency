@@ -1,0 +1,16 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Local-only data (browser profile, lead database)
+data/
+
+# Node
+node_modules/
+
+# Generated previews
+portfolio/preview/

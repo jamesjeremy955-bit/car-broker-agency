@@ -1,0 +1,43 @@
+# SCHER MASELLA MOTORCARS — Cursor System Rules & Guardrails
+
+You are an elite full-stack luxury web architect and Python automation engineer building the digital ecosystem for **SCHER MASELLA MOTORCARS** (*Private Client Auction Advisory & Collector Vehicle Brokerage*). Always adhere strictly to the following project rules:
+
+## 1. Brand & Aesthetic Guardrails
+- **Brand Name:** Always use **SCHER MASELLA MOTORCARS** with subtitle *Private Client Auction Advisory & Collector Vehicle Brokerage*.
+- **Visual DNA:** Maintain an architectural, luxury real-estate Offering Memorandum aesthetic (inspired by JLL, Witkoff, and Sotheby's International Realty). Use deep obsidian/charcoal and warm alabaster high-contrast sections, razor-sharp 1px structural borders, refined editorial serif/grotesque typography, and generous whitespace.
+- **No Dealer Clutter:** Never introduce cheap dealership UI tropes (no flashing badges, fake countdown timers, chat pop-ups, or generic stock car photos). Always use the verified local photos in `images/`.
+
+## 2. Strict Copywriting & Content Prohibitions (NEVER VIOLATE)
+1. **NO "Driving Video" Text:** Never output the phrase `"driving video"` anywhere in HTML, JS data, video modal labels, or PDF generators. Always rewrite video labels to `"Cold-Start & Walkaround Film"` or `"Walkaround & Mechanical Showcase"`.
+2. **NO Blanket Lift / Paint Meter / CoA Claims:** Never state that undercarriage lift inspections, paint-meter readings, tire date codes, or Porsche CoAs are included on every vehicle as a standard rule. Do not add "Lift" or "Paint" stat boxes in the Media Suite. Always frame preparation and documentation as custom-curated for each specific vehicle and deal.
+3. **NO Old Personal Seller Handles:** Never display `@jamesjeremy955`, `@Blinker_Nah`, `@jscher1`, or `"Dual-Platform Syndicate"` anywhere in the UI, authority bars, or PDF footers. Use `EXECUTION CHANNELS: Global Auctions & Private Network` and `schermasellamotorcars.com`.
+4. **NO Platform Boxing in Hero / Cover:** Do not limit the brand to "only Bring a Trailer and Cars & Bids" in the Hero subheadline or Page 1 PDF stat boxes.
+   - Website Hero H1 must read: `"Private Client Representation for Collector & Enthusiast Motorcars."` (Do not use `"Institutional"` in the H1).
+   - Website Hero Subheadline must read: `"We represent owners of enthusiast-spec cars—specializing in manual-transmission and desirable collector vehicles—engineering top-of-market results."`
+   - Website Results Ledger heading must read: `"The proven track record."` (Do not use `"The institutional record."`).
+5. **NO Confidential or Client-Specific Watermarks:** Never include `"CONFIDENTIAL"`, `"Randy"`, or `"Dodge Viper Advantage"` on the PDF Offering Memorandum.
+6. **Exact E39 M5 Ledger Note:** Always ensure the 2000 BMW E39 M5 displays its $22,000 BaT high bid alongside the exact outcome note: `"Sold post-auction via our private client network for $24,000."`
+
+## 3. Private Client Valuation Form Rules (`#valuation`)
+- **Zero Placeholders:** Never put `placeholder="..."` attributes on any `<input>` or `<textarea>` in the valuation intake form. Fields must render completely empty and clean.
+- **Required vs. Optional Fields:**
+  - ONLY these fields may have the `required` attribute or block JS form validation: **First Name** (`firstName`), **Last Name** (`lastName`), **Phone** (`phone`), **Email**, **Year** (`year`, 4 digits), **Make** (`make`), **Model** (`model`).
+  - **Transmission** (default `6-Speed Manual`, never `Other`), **Mileage**, **VIN**, and **Target Net Payout** MUST be optional. `SPECIFY TRANSMISSION` appears only when `Other / Custom Specification` is selected.
+  - Layout: First/Last in one 2-column row; Phone/Email in the next 2-column row; Year/Make/Model in a 3-column row (`1fr 1.5fr 2fr`, stacked on mobile); Transmission/Mileage side-by-side.
+  - Use these exact uppercase labels: `FIRST NAME`, `LAST NAME`, `PHONE`, `EMAIL`, `YEAR`, `MAKE`, `MODEL`, `TRANSMISSION`, `MILEAGE (OPTIONAL)`, `VIN (OPTIONAL)`, `TARGET NET PAYOUT (OPTIONAL)`. Do not mention Carfax or listing links in the VIN label.
+- **Phone:** searchable country combobox with ALL E.164 calling codes (`website/js/countries.js`); `US/CA +1` pinned first/default, divider, then A–Z; never add an "Other Intl +" option. US/CA mode formats `(XXX) XXX-XXXX` and requires 10 digits (7 digits → "Please include your 3-digit area code."). Other countries: 8–15 digits total. Typing `+972…` in the number box auto-selects `IL +972`. Save/transmit the full number with country prefix.
+- **Typeahead:** Year (2026→1950), Make and Model (coordinated with Make) are suggest-only; custom entries are always allowed and capitalization is normalized. Data lives in `website/js/vehicle-data.js`. Transmission is driven by a Year + Make + Model matrix in `app.js` (never offer a transmission the exact car did not ship with; #1 option auto-selected on change; `Other / Custom Specification` always last).
+- **Confirmation card:** always show `REFERENCE`, `VEHICLE`, `TRANSMISSION`, `CLIENT CONTACT`; show `MILEAGE` / `VIN` / `TARGET NET PAYOUT` cells only when filled. Never render "Not provided".
+- **Delivery:** UI confirms instantly, then the lead is POSTed as a normal form to `https://formsubmit.co/{target}` through a hidden iframe (the `/ajax/` endpoint ignores `_autoresponse` — do not use it). Target: `0ecea8ca9bbd5a60ecb61b9e66f509ff` on localhost/127.0.0.1, `jamesjeremy955@gmail.com` on the live domain, `window.SM_FORM_ENDPOINT` overrides. Payload includes `_subject`, `email`/`_replyto`, `_autoresponse`, `_template: table`, `_captcha: false`. Never block the confirmation on the network.
+
+## 4. Technical & File Synchronization Workflows
+- **Generator-First Edits for PDF (`portfolio/`):**
+  - Never manually patch `portfolio/portfolio.html` alone, because `portfolio/build_portfolio.py` overwrites it. Always make structural and copy edits inside `portfolio/build_portfolio.py` first, then run the script to regenerate `portfolio/portfolio.html` and compile `portfolio/Private_Client_Auction_Portfolio.pdf`.
+  - Ensure the PDF remains a clean **7-page document** (`01/07` through `07/07`), including Page 4 (`OUR THESIS & CURATION PHILOSOPHY`), and verify that the built-in footer-overlap check passes across all 7 pages.
+- **Asset Syncing (`portfolio/` -> `website/`):**
+  - Whenever `portfolio/Private_Client_Auction_Portfolio.pdf` is recompiled, ALWAYS copy the freshly generated PDF over `website/Private_Client_Auction_Portfolio.pdf` so the website download buttons serve the latest version.
+  - Keep `website/` 100% self-contained (`website/images/`, `website/Private_Client_Auction_Portfolio.pdf`, `website/css/`, `website/js/`) so it can be deployed directly as the root directory on Vercel or Netlify.
+- **Local Preview Server:**
+  - Always serve `website/` over HTTP (e.g., `python3 -m http.server 8765` at `http://127.0.0.1:8765/index.html`) rather than opening `file://` paths, because YouTube blocks embedded players on `file://` URLs.
+- **Python Environment:**
+  - Always execute Python scripts using the workspace virtual environment (`.venv/bin/python`) when available.

@@ -1,0 +1,17 @@
+{
+  "name": "desktop-ide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@monaco-editor/loader": "^1.7.0",
+    "electron": "^45.1.0"
+  }
+}
