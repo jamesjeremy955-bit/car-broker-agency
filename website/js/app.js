@@ -1,4 +1,4 @@
-/* SCHER RODRIGUEZ MOTORGROUP — site behaviour (no dependencies) */
+/* SCHER MASELLA MOTORCARS — site behaviour (no dependencies) */
 (function () {
   "use strict";
 
@@ -868,9 +868,9 @@
         _subject: "New Valuation Inquiry [Ref: " + d.reference + "] \u2014 " + d.year + " " + d.make + " " + d.model,
         _template: "table", _captcha: "false",
         _replyto: d.email, email: d.email,
-        _autoresponse: "Thank you for contacting Scher Rodriguez Motorgroup (Reference: " + d.reference + "). We have received your private valuation inquiry for your " +
-          d.year + " " + d.make + " " + d.model + ". A Scher Rodriguez advisor is reviewing your vehicle details and will respond with a recommended selling strategy, schedule, and valuation target within one business day. " +
-          "\u2014 Scher Rodriguez Motorgroup | Private Client Auction Advisory & Collector Vehicle Brokerage (schermasellamotorcars.com)",
+        _autoresponse: "Thank you for contacting Scher Masella Motorcars (Reference: " + d.reference + "). We have received your private valuation inquiry for your " +
+          d.year + " " + d.make + " " + d.model + ". A Scher Masella advisor is reviewing your vehicle details and will respond with a recommended selling strategy, schedule, and valuation target within one business day. " +
+          "\u2014 Scher Masella Motorcars | Private Client Auction Advisory & Collector Vehicle Brokerage (schermasellamotorcars.com)",
         reference: d.reference, name: d.firstName + " " + d.lastName, phone: d.phone, vehicle: d.vehicle,
         year: d.year, make: d.make, model: d.model, transmission: d.transmission
       };

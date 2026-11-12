@@ -1,4 +1,4 @@
-/* Scher Rodriguez Motorgroup — ITU-T E.164 country calling codes for the valuation form's phone selector.
+/* Scher Masella Motorcars — ITU-T E.164 country calling codes for the valuation form's phone selector.
    Format: "ISO|Country name|calling code digits|search aliases". US/CA +1 is pinned separately in app.js. */
 window.SM_COUNTRIES = [
   "AF|Afghanistan|93","AL|Albania|355","DZ|Algeria|213","AS|American Samoa|1684","AD|Andorra|376","AO|Angola|244",

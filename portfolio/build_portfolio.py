@@ -14,7 +14,7 @@ cfg = json.loads((HERE / "cars.json").read_text())
 manifest_path = HERE / "images" / "manifest.json"
 manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
 
-BRAND = "SCHER RODRIGUEZ MOTORGROUP"
+BRAND = "SCHER MASELLA MOTORCARS"
 TAGLINE = "Private Client Auction Advisory & Collector Vehicle Brokerage"
 DOC_TITLE = f"{BRAND} \u2022 {TAGLINE.upper()}"
 TOTAL_PAGES = 7
@@ -345,7 +345,7 @@ p1 = f"""
   <div class="band">{f'<img src="{escape(hero_src)}" alt="{escape(hero["title"])}">' if hero_src else ''}
     <div class="top"><span>Transaction Memorandum</span><span>November 2026</span></div>
     <div class="ttl"><div class="rule"></div>
-      <h1>Scher Rodriguez<br>Motorgroup</h1>
+      <h1>Scher Masella<br>Motorcars</h1>
       <div class="s">&bull; Private Client Auction Advisory &amp;<br>&nbsp;&nbsp;Collector Vehicle Brokerage</div></div>
     <div class="cap"><div class="k">Top Transaction &middot; Bring a Trailer</div><div class="t">{escape(hero["title"])}</div><div class="p">{money(hero["price"])}</div></div>
   </div>
@@ -384,7 +384,7 @@ p4 = f"""
   <div class="th-main">
     <div class="th-shot"><img src="{escape(thesis_img)}" alt="{escape(thesis_car["title"])}"><span class="th-cap">{escape(thesis_car["title"])} &middot; {money(thesis_car["price"])}</span></div>
     <div class="th-copy">
-      <p class="th-lead">Scher Rodriguez Motorgroup specializes in manual-transmission, analog, and rare enthusiast-spec vehicles&mdash;timeless machines that hold enduring value.</p>
+      <p class="th-lead">Scher Masella Motorcars specializes in manual-transmission, analog, and rare enthusiast-spec vehicles&mdash;timeless machines that hold enduring value.</p>
       <p>Every deal is unique. Rather than applying a rigid, one-size-fits-all template, we take the time to curate each vehicle&rsquo;s preparation, documentation, and narrative around what makes that specific asset special&mdash;leveraging both international auction platforms and our private client network to achieve the highest possible return.</p>
     </div>
   </div>
