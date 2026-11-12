@@ -1,7 +1,7 @@
-# SCHER MASELLA MOTORCARS — Project Blueprint & Business Context
+# SCHER RODRIGUEZ MOTORGROUP — Project Blueprint & Business Context
 
 ## 1. Brand Identity & Positioning
-- **Official Brand Name:** SCHER MASELLA MOTORCARS
+- **Official Brand Name:** SCHER RODRIGUEZ MOTORGROUP
 - **Official Subtitle:** *Private Client Auction Advisory & Collector Vehicle Brokerage*
 - **Principals:** Jeremy Scher & Giada Masella
 - **Primary Domain:** `schermasellamotorcars.com`
@@ -18,7 +18,7 @@
 
 ### B. Strict Copy & Terminology Restrictions
 - **NO "Driving Video" Mention:** Never use the phrase `"driving video"` on the website, video clip labels, or PDF. Always refer to videos as **"4K Cold-Start & Walkaround Films"** or **"Documented Cold Starts & Walkarounds"**.
-- **NO Personal Platform Handles:** Never display old personal auction usernames (`@jamesjeremy955`, `@Blinker_Nah`, `@jscher1`) or `"Dual-Platform Syndicate"` on the website or PDF. All branding must route through **SCHER MASELLA MOTORCARS** (`schermasellamotorcars.com`).
+- **NO Personal Platform Handles:** Never display old personal auction usernames (`@jamesjeremy955`, `@Blinker_Nah`, `@jscher1`) or `"Dual-Platform Syndicate"` on the website or PDF. All branding must route through **SCHER RODRIGUEZ MOTORGROUP** (`schermasellamotorcars.com`).
 - **NO Personalized Client Names on Universal Assets:** Do not include `"Randy"`, `"Dodge Viper Advantage"`, or `"CONFIDENTIAL"` watermarks on the universal Offering Memorandum PDF or website.
 - **Terminology Replacements:**
   - Avoid overusing `"institutional"` in headlines (e.g., Hero headline is *"Private Client Representation for Collector & Enthusiast Motorcars."* and Results Ledger headline is *"The proven track record."*).
@@ -38,7 +38,7 @@
 - **Total Verified Auction Volume:** **$284,153+** (**$286,153+** including Private Network Placement on the E39 M5)
 - **Featured Enthusiast Transactions:** **10**
 - **Reserve & Sale Integrity:** **100%**
-- **Featured Case Study ("The Private Network Backstop"):** 2000 BMW E39 M5 (Le Mans Blue / 6-Speed) reached a $22,000 high bid on Bring a Trailer (reserve not met). Scher Masella Motorcars immediately stepped in and sold the car post-auction via our private client network for **$24,000**—proving we protect client downside and beat the auction high bid when needed.
+- **Featured Case Study ("The Private Network Backstop"):** 2000 BMW E39 M5 (Le Mans Blue / 6-Speed) reached a $22,000 high bid on Bring a Trailer (reserve not met). Scher Rodriguez Motorgroup immediately stepped in and sold the car post-auction via our private client network for **$24,000**—proving we protect client downside and beat the auction high bid when needed.
 
 ### Master 10-Vehicle Roster (Ranked by Price)
 1. **1985 Porsche 911 Carrera Coupe (Factory M491 Turbo-Look)** — **$91,000** (Sold on BaT • Manual • CoA & factory widebody provenance curation)
@@ -82,12 +82,12 @@ Project Root: `~/Developer/car-broker-agency`
 ### Module 2: 7-Page PDF Offering Memorandum (`portfolio/`)
 - **Core Files:** `portfolio/build_portfolio.py` (master generator), `portfolio/portfolio.html`, `portfolio/Private_Client_Auction_Portfolio.pdf`, `portfolio/cars.json`, `portfolio/images/`.
 - **7-Page Structure:**
-  - **Page 01/07 (Cover):** Masthead (`SCHER MASELLA MOTORCARS`), Specialization (`Manual-Transmission Enthusiast-Spec & Desirable Collector Cars.`), and 3 metric boxes (`TOTAL VOLUME MANAGED: $284,153`, `RESERVE TRANSPARENCY: 100%`, `EXECUTION CHANNELS: Global & Private`).
+  - **Page 01/07 (Cover):** Masthead (`SCHER RODRIGUEZ MOTORGROUP`), Specialization (`Manual-Transmission Enthusiast-Spec & Desirable Collector Cars.`), and 3 metric boxes (`TOTAL VOLUME MANAGED: $284,153`, `RESERVE TRANSPARENCY: 100%`, `EXECUTION CHANNELS: Global & Private`).
   - **Page 02/07 – 03/07:** Selected Transactions & Flagship Case Studies.
   - **Page 04/07 (Thesis & Curation Recap Page):** `OUR THESIS & CURATION PHILOSOPHY` — *"We Specialize in Manual-Transmission, Collectible & Timeless Enthusiast Cars."* Explains our focus on enduring value and why every deal receives bespoke preparation rather than a cookie-cutter template.
   - **Page 05/07:** `SECTION 03: Additional Transactions`.
   - **Page 06/07:** Full Historical Results Ledger Table (including the exact E39 M5 sub-note: *"Sold post-auction via our private client network for $24,000."*).
-  - **Page 07/07:** Advisory Approach (4 Pillars, closing callout box, and `SCHER MASELLA MOTORCARS • schermasellamotorcars.com`).
+  - **Page 07/07:** Advisory Approach (4 Pillars, closing callout box, and `SCHER RODRIGUEZ MOTORGROUP • schermasellamotorcars.com`).
 
 ### Module 3: Custom BrokerIDE & Sourcing Engine
 - **Environment:** Custom Electron BrokerIDE launched via `Cmd + Shift + B` inside the workspace with nationwide region selection and automated sourcing scripts.
