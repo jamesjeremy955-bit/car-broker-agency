@@ -24,7 +24,18 @@ window.SM_CARS = [
     url: "https://bringatrailer.com/listing/2013-porsche-911-carrera-s-coupe-19/"
   },
   {
-    id: "10-1994-dodge-viper-rt10", rank: 3, category: "porsche", platform: "bat",
+    id: "11-2007-bmw-e60-m5", rank: 3, category: "bmw", platform: "cb",
+    title: "2007 BMW E60 M5 Sedan", sub: "S85 V10 · 6-Speed Manual · Interlagos Blue",
+    price: 39750, outcome: "sold", outcomeLabel: "Sold on C&B", date: "April 17, 2026",
+    transmission: "6-Speed Manual", specs: ["5.0L S85 V10", "6-Speed Manual", "Interlagos Blue Metallic"],
+    stats: "30,119 views • 10 bids",
+    story: "A six-speed S85 in Interlagos Blue is the E60 collectors count in dozens. We led with the manual V10, 67,800 miles, twelve years with the same owner, and the build sheet—Style 166M wheels, variable differential, sunroof—and the car drew 30,119 views and 10 bids before closing at $39,750.",
+    tailored: ["Six-speed S85 & Interlagos Blue specification", "Twelve-year ownership & build-sheet story", "Walkaround & mechanical showcase film"],
+    image: "images/11-2007-bmw-e60-m5.jpg",
+    url: "https://carsandbids.com/auctions/KmYzEL1l/2007-bmw-m5"
+  },
+  {
+    id: "10-1994-dodge-viper-rt10", rank: 4, category: "porsche", platform: "bat",
     title: "1994 Dodge Viper RT/10", sub: "8.0L V10 · 6-Speed Manual",
     price: 35251, outcome: "sold", outcomeLabel: "Sold on BaT", date: "May 4, 2025",
     transmission: "6-Speed Manual", specs: ["8.0L V10", "Tremec 6-Speed Manual", "Viper Red / Quartz"],
@@ -35,7 +46,7 @@ window.SM_CARS = [
     url: "https://bringatrailer.com/listing/1994-dodge-viper-rt-10-82/"
   },
   {
-    id: "03-2000-bmw-e39-m5", rank: 4, category: "bmw", platform: "bat",
+    id: "03-2000-bmw-e39-m5", rank: 5, category: "bmw", platform: "bat",
     title: "2000 BMW E39 M5 Sedan", sub: "S62 V8 · 6-Speed Manual · Le Mans Blue",
     price: 22000, outcome: "bid", outcomeLabel: "BaT High Bid", date: "September 13, 2025",
     final: 24000, finalLabel: "Sold for $24,000 via Private Network",
@@ -47,7 +58,7 @@ window.SM_CARS = [
     url: "https://bringatrailer.com/listing/2000-bmw-m5-351/"
   },
   {
-    id: "04-2010-bmw-535i-xdrive-wagon", rank: 5, category: "bmw", platform: "cb",
+    id: "04-2010-bmw-535i-xdrive-wagon", rank: 6, category: "bmw", platform: "cb",
     title: "2010 BMW 535i xDrive Sports Wagon", sub: "6-Speed Manual · N54",
     price: 20150, outcome: "sold", outcomeLabel: "Sold on C&B", date: "August 4, 2026",
     transmission: "6-Speed Manual", specs: ["N54 Twin-Turbo I6", "6-Speed Manual", "xDrive AWD"],
@@ -58,7 +69,7 @@ window.SM_CARS = [
     url: "https://carsandbids.com/auctions/rJZYxYgv/2010-bmw-535i-xdrive-sports-wagon"
   },
   {
-    id: "05-2001-bmw-e46-m3-coupe", rank: 6, category: "bmw", platform: "cb",
+    id: "05-2001-bmw-e46-m3-coupe", rank: 7, category: "bmw", platform: "cb",
     title: "2001 BMW E46 M3 Coupe", sub: "6-Speed Manual",
     price: 19250, outcome: "sold", outcomeLabel: "Sold on C&B", date: "",
     transmission: "6-Speed Manual", specs: ["3.2L S54 I6", "6-Speed Manual"],
@@ -69,7 +80,7 @@ window.SM_CARS = [
     url: "https://carsandbids.com/auctions/3BZmWo85/2001-bmw-m3-coupe"
   },
   {
-    id: "06-2003-bmw-e46-m3-convertible", rank: 7, category: "bmw", platform: "cb",
+    id: "06-2003-bmw-e46-m3-convertible", rank: 8, category: "bmw", platform: "cb",
     title: "2003 BMW E46 M3 Convertible", sub: "6-Speed Manual",
     price: 13800, outcome: "sold", outcomeLabel: "Sold on C&B", date: "January 22, 2025",
     transmission: "6-Speed Manual", specs: ["3.2L S54 I6", "6-Speed Manual", "Miami, FL"],
@@ -78,17 +89,6 @@ window.SM_CARS = [
     tailored: ["Southern-owned, mostly unmodified story", "Startup & convertible-top films", "National buyer audience from Miami, FL"],
     image: "images/06-2003-bmw-e46-m3-convertible.jpg",
     url: "https://carsandbids.com/auctions/3qJeRm2y/2003-bmw-m3-convertible"
-  },
-  {
-    id: "07-2016-bmw-328d-xdrive-wagon", rank: 8, category: "bmw", platform: "cb",
-    title: "2016 BMW 328d xDrive Sports Wagon", sub: "Turbodiesel · AWD",
-    price: 12402, outcome: "sold", outcomeLabel: "Sold on C&B", date: "October 16, 2026",
-    transmission: "8-Speed Automatic", specs: ["2.0L Turbodiesel", "xDrive AWD", "California-owned"],
-    stats: "5,200+ views • 31 bids",
-    story: "A turbodiesel xDrive wagon is a niche, and niches need the right audience. We emphasized California ownership and recent service and presented it to enthusiasts who value practical, efficient wagons, earning 31 bids and 5,200+ views.",
-    tailored: ["Niche-audience positioning", "California ownership & recent service", "Cold-start & walkaround film"],
-    image: "images/07-2016-bmw-328d-xdrive-wagon.jpg",
-    url: "https://carsandbids.com/auctions/9eM6mboj/2016-bmw-328d-xdrive-sports-wagon"
   },
   {
     id: "08-2008-bmw-335i-sedan", rank: 9, category: "bmw", platform: "bat",
