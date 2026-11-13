@@ -33,9 +33,9 @@ bat = [c for c in cars if c["platform"] == "BaT"]
 cb = [c for c in cars if c["platform"] != "BaT"]
 
 # guard rails: headline figures must match what the business is asserting
-assert volume_total == 284_153, volume_total
+assert volume_total == 311_501, volume_total
 assert (len(cars), len(sold), len(bids)) == (10, 9, 1), (len(cars), len(sold), len(bids))
-EXPECTED_ORDER = [91000, 51000, 35251, 22000, 20150, 19250, 13800, 12402, 9800, 9500]
+EXPECTED_ORDER = [91000, 51000, 39750, 35251, 22000, 20150, 19250, 13800, 9800, 9500]
 assert [c["price"] for c in cars] == EXPECTED_ORDER
 
 missing_images = []
@@ -367,7 +367,7 @@ p1 = f"""
 
 p2 = f"""
 <section class="page">{chrome(2, "Flagship Transactions")}
-  {heading("Section 01", "Flagship Transactions", "The three highest hammer prices in the portfolio, spanning air-cooled and modern Porsche and an American V10 icon.")}
+  {heading("Section 01", "Flagship Transactions", "The three highest hammer prices in the portfolio, spanning air-cooled and modern Porsche and a six-speed S85 V10.")}
   <div class="g3">{''.join(card(c) for c in top3)}</div>
 </section>"""
 

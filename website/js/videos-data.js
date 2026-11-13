@@ -156,21 +156,13 @@ window.SM_VIDEOS = {
       "embeddable": true
     }
   ],
-  "07-2016-bmw-328d-xdrive-wagon": [
+  "11-2007-bmw-e60-m5": [
     {
       "provider": "youtube",
-      "id": "cagZdzPLKi4",
-      "embed": "https://www.youtube-nocookie.com/embed/cagZdzPLKi4",
-      "watch": "https://www.youtube.com/watch?v=cagZdzPLKi4",
-      "label": "Cold-Start & Walkaround",
-      "embeddable": true
-    },
-    {
-      "provider": "youtube",
-      "id": "W1L-3YGFZ08",
-      "embed": "https://www.youtube-nocookie.com/embed/W1L-3YGFZ08",
-      "watch": "https://www.youtube.com/watch?v=W1L-3YGFZ08",
-      "label": "On-Road Footage",
+      "id": "ub6Cg1bneGM",
+      "embed": "https://www.youtube-nocookie.com/embed/ub6Cg1bneGM",
+      "watch": "https://www.youtube.com/watch?v=ub6Cg1bneGM",
+      "label": "Walkaround & Mechanical Showcase",
       "embeddable": true
     }
   ],
